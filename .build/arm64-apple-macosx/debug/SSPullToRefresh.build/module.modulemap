@@ -1,0 +1,4 @@
+module SSPullToRefresh {
+    umbrella header "/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/SSPullToRefresh/include/SSPullToRefresh.h"
+    export *
+}

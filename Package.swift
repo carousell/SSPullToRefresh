@@ -16,7 +16,7 @@ let package = Package(
             name: "SSPullToRefresh",
             path: "SSPullToRefresh",
             exclude: ["Info.plist"],
-            publicHeadersPath: "include"
+            publicHeadersPath: "."
         )
     ]
 )

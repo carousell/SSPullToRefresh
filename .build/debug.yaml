@@ -1,0 +1,51 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "SSPullToRefresh-debug.module": ["<SSPullToRefresh-debug.module>"]
+  "main": ["<SSPullToRefresh-debug.module>"]
+  "test": ["<SSPullToRefresh-debug.module>"]
+default: "main"
+nodes:
+  "/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/SSPullToRefresh/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/SSPullToRefresh.build/SSPullToRefreshDefaultContentView.m.o":
+    tool: clang
+    inputs: ["/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/SSPullToRefresh/SSPullToRefreshDefaultContentView.m"]
+    outputs: ["/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/SSPullToRefresh.build/SSPullToRefreshDefaultContentView.m.o"]
+    description: "Compiling SSPullToRefresh SSPullToRefreshDefaultContentView.m"
+    args: ["/Applications/Xcode-15.3.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-fobjc-arc","-target","arm64-apple-macosx10.13","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/index/store","-fmodules","-fmodule-name=SSPullToRefresh","-I","/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/SSPullToRefresh/include","-fmodules-cache-path=/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/ModuleCache","-isysroot","/Applications/Xcode-15.3.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk","-F","/Applications/Xcode-15.3.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-fPIC","-g","-MD","-MT","dependencies","-MF","/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/SSPullToRefresh.build/SSPullToRefreshDefaultContentView.m.d","-c","/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/SSPullToRefresh/SSPullToRefreshDefaultContentView.m","-o","/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/SSPullToRefresh.build/SSPullToRefreshDefaultContentView.m.o"]
+    deps: "/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/SSPullToRefresh.build/SSPullToRefreshDefaultContentView.m.d"
+
+  "/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/SSPullToRefresh.build/SSPullToRefreshSimpleContentView.m.o":
+    tool: clang
+    inputs: ["/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/SSPullToRefresh/SSPullToRefreshSimpleContentView.m"]
+    outputs: ["/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/SSPullToRefresh.build/SSPullToRefreshSimpleContentView.m.o"]
+    description: "Compiling SSPullToRefresh SSPullToRefreshSimpleContentView.m"
+    args: ["/Applications/Xcode-15.3.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-fobjc-arc","-target","arm64-apple-macosx10.13","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/index/store","-fmodules","-fmodule-name=SSPullToRefresh","-I","/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/SSPullToRefresh/include","-fmodules-cache-path=/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/ModuleCache","-isysroot","/Applications/Xcode-15.3.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk","-F","/Applications/Xcode-15.3.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-fPIC","-g","-MD","-MT","dependencies","-MF","/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/SSPullToRefresh.build/SSPullToRefreshSimpleContentView.m.d","-c","/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/SSPullToRefresh/SSPullToRefreshSimpleContentView.m","-o","/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/SSPullToRefresh.build/SSPullToRefreshSimpleContentView.m.o"]
+    deps: "/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/SSPullToRefresh.build/SSPullToRefreshSimpleContentView.m.d"
+
+  "/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/SSPullToRefresh.build/SSPullToRefreshView.m.o":
+    tool: clang
+    inputs: ["/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/SSPullToRefresh/SSPullToRefreshView.m"]
+    outputs: ["/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/SSPullToRefresh.build/SSPullToRefreshView.m.o"]
+    description: "Compiling SSPullToRefresh SSPullToRefreshView.m"
+    args: ["/Applications/Xcode-15.3.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-fobjc-arc","-target","arm64-apple-macosx10.13","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/index/store","-fmodules","-fmodule-name=SSPullToRefresh","-I","/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/SSPullToRefresh/include","-fmodules-cache-path=/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/ModuleCache","-isysroot","/Applications/Xcode-15.3.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk","-F","/Applications/Xcode-15.3.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-fPIC","-g","-MD","-MT","dependencies","-MF","/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/SSPullToRefresh.build/SSPullToRefreshView.m.d","-c","/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/SSPullToRefresh/SSPullToRefreshView.m","-o","/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/SSPullToRefresh.build/SSPullToRefreshView.m.o"]
+    deps: "/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/SSPullToRefresh.build/SSPullToRefreshView.m.d"
+
+  "<SSPullToRefresh-debug.module>":
+    tool: phony
+    inputs: ["/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/SSPullToRefresh.build/SSPullToRefreshDefaultContentView.m.o","/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/SSPullToRefresh.build/SSPullToRefreshSimpleContentView.m.o","/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/.build/arm64-apple-macosx/debug/SSPullToRefresh.build/SSPullToRefreshView.m.o"]
+    outputs: ["<SSPullToRefresh-debug.module>"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/SSPullToRefresh/","/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/Package.swift","/Users/vijaytholpadi/Repositories/platform/SSPullToRefresh/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
