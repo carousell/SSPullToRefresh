@@ -1,22 +1,26 @@
-// swift-tools-version:5.9
+// swift-tools-version:5.6
 import PackageDescription
 let package = Package(
     name: "SSPullToRefresh",
-    defaultLocalization: "en",
     platforms: [
         .iOS(.v12)
     ],
     products: [
         .library(
             name: "SSPullToRefresh",
-            targets: ["SSPullToRefresh"])
+            targets: ["SSPullToRefresh"]
+        )
     ],
     targets: [
         .target(
             name: "SSPullToRefresh",
             path: "SSPullToRefresh",
             exclude: ["Info.plist"],
-            publicHeadersPath: "."
+            sources: ["."],
+            publicHeadersPath: ".",
+            cSettings: [
+                    .headerSearchPath("."),
+                  ]
         )
     ]
 )
