@@ -15,10 +15,10 @@ FOUNDATION_EXPORT double SSPullToRefreshVersionNumber;
 FOUNDATION_EXPORT const unsigned char SSPullToRefreshVersionString[];
 
 // Main pull to refresh view. This class contains all of the pulling logic.
-#import <SSPullToRefresh/SSPullToRefreshView.h>
+#import "SSPullToRefreshView.h"
 
 // Default content view. Similar to Facebook.
-#import <SSPullToRefresh/SSPullToRefreshDefaultContentView.h>
+#import "SSPullToRefreshDefaultContentView.h"
 
 // Simple content view. Similar to Path.
-#import <SSPullToRefresh/SSPullToRefreshSimpleContentView.h>
+#import "SSPullToRefreshSimpleContentView.h"
